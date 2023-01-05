@@ -1,0 +1,15 @@
+
+
+.pic {
+    height: 300px;
+    width: 250px;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    justify-content: center;
+}
+
+.center p{text-justify: center;}

@@ -1,0 +1,18 @@
+.cart h4{
+    color: gray;
+    cursor: pointer;
+}
+.cart{
+    margin-left: 30px;
+}
+.shopp{
+    display: flex;
+    justify-content: space-around;
+}
+.botal1{
+   margin: 50px 50px;
+
+}
+.botal2{
+    margin: 50px 50px;
+}
