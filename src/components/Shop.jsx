@@ -4,7 +4,7 @@ import BotwithButt from './BotwithButt'
 import './Shop.css'
 import { BsFillCartFill } from "react-icons/bs";
 import { FaChevronCircleRight } from 'react-icons/fa';
-
+import img1 from "../assets/images/double-bottle.png"
 const Shop = () => {
     return (
         <>
@@ -30,13 +30,13 @@ const Shop = () => {
 
 
                 <div className='botal1'>
-                    <BotwithButt h="6 X 3L bottles" h3="Naturally Minerels water" p="Naturally Spark Water ensures your health  " /><br />
-                    <BotwithButt h="6 X 3L bottles" h3="Naturally Minerels water" p="Naturally Spark Water ensures your health " />
+                    <BotwithButt im={img1} h="6 X 3L bottles" h3="Naturally Minerels water" p="Naturally Spark Water ensures your health  " /><br />
+                    <BotwithButt im={img1} h="6 X 3L bottles" h3="Naturally Minerels water" p="Naturally Spark Water ensures your health " />
 
                 </div>
                 <div className='botal2'>
-                    <BotwithButt h="6 X 3L bottles" h3="Naturally Minerels water" p="Naturally Spark Water ensures your health " /><br />
-                    <BotwithButt h="6 X 3L bottles" h3="Naturally Minerels water" p="Naturally Spark Water ensures your health " />
+                    <BotwithButt im={img1} h="6 X 3L bottles" h3="Naturally Minerels water" p="Naturally Spark Water ensures your health " /><br />
+                    <BotwithButt im={img1} h="6 X 3L bottles" h3="Naturally Minerels water" p="Naturally Spark Water ensures your health " />
                 </div>
 
 
