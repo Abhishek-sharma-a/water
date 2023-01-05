@@ -1,0 +1,33 @@
+.hero1 {
+    width: 100%;
+    height: 80vh;
+    background-image: url(../assets/images/ice-1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-end;
+    align-items: center;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+}
+
+.hero1 .pic {
+    height: 401px;
+    width: 350px;
+}
+
+.hero h6 {
+    color: #346bae;
+    font-size: 20px;
+    margin-left: 100px;
+}
+.hero h1{font-size: 80px;
+font-weight: 600;    margin-left: 50px;}
+/* df */

@@ -1,0 +1,11 @@
+.flex1{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0px;
+}
+.flex2{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0px;
+}
+
