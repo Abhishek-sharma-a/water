@@ -7,19 +7,21 @@ import Logo from "./Logo"
 import JSONDATA from './MOCK_DATA.json'
 import Modal from 'react-bootstrap/Modal';
 const Header = () => {
-  const [show, setShow] = useState(false);
 
+
+  const [show, setShow] = useState(false);
   const handleClose = () => { setShow(false); setSearch(false) }
   const handleShow = () => setShow(true);
 
   let [scroll, setScroll] = useState(false);
   const [search, setSearch] = useState(false)
+  const [find, setFind] = useState("");
 
-const [find, setFind]= useState("");
-let x = JSONDATA.filter((ele) => {
-  // return ele.first_name === search;
-  return find === "" ? null : ele.first_name.toLowerCase().includes(find.toLowerCase())
-})
+
+  let x = JSONDATA.filter((ele) => {
+    // return ele.first_name === search;
+    return find === "" ? null : ele.first_name.toLowerCase().includes(find.toLowerCase())
+  })
 
 
   const click = () => {
@@ -66,10 +68,10 @@ let x = JSONDATA.filter((ele) => {
           <Modal.Header closeButton>
             <Modal.Title>Search</Modal.Title>
           </Modal.Header>
-          <Modal.Body><input type="text" placeholder='search here...'  onChange={(event) => { setFind(event.target.value) }}/>
-        <div>  {x.map((val, key) => {
-        return (<div key={key}><p>{val.first_name} {val.last_name}</p></div>)
-      })}</div></Modal.Body>
+          <Modal.Body><input type="text" placeholder='search here...' onChange={(event) => { setFind(event.target.value) }} />
+            <div>  {x.map((val, key) => {
+              return (<div key={key}><p>{val.first_name} {val.last_name}</p></div>)
+            })}</div></Modal.Body>
 
         </Modal></div>
     </>
