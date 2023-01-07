@@ -155,3 +155,9 @@ font-weight: 600;
   background-color: rgb(230, 159, 78);
   cursor: pointer;
   transition: 0.3s ease-in-out;}
+
+  input[type="text"] {
+    width: 100%;
+    padding: 9px;
+    border: none;
+}
