@@ -11,17 +11,17 @@ import ScrollToTop from './components/ScrolltoTop';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Auth0Provider
-    domain="dev-ont5zg8btmkwukz3.us.auth0.com"
-    clientId="mr5MUTgsdWC9Z0ioFaGwt3GQ6UxV3gFa"
-    redirectUri={window.location.origin}
-  >
+  domain="dev-ont5zg8btmkwukz3.us.auth0.com"
+  clientId="mr5MUTgsdWC9Z0ioFaGwt3GQ6UxV3gFa"
+  redirectUri={window.location.origin}
+>
 
-     <BrowserRouter> 
-     <ScrollToTop/>
-         <App />
-      </BrowserRouter>
-  
-      </Auth0Provider>
+  <BrowserRouter>
+    <ScrollToTop />
+    <App />
+  </BrowserRouter>
+
+</Auth0Provider>
 );
 
 reportWebVitals();
