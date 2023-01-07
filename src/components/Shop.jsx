@@ -25,8 +25,7 @@ const Shop = () => {
                     <h4><FaChevronCircleRight />&nbsp;Uncategorized</h4>
                 </div>
 
-                {/* yhkuy */}
-                {/* tfkuyfl */}
+                
 
 
                 <div className='botal1'>
@@ -47,7 +46,7 @@ const Shop = () => {
 
 
         </>
-
+// jj
     )
 }
 
