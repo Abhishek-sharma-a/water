@@ -8,8 +8,7 @@
 }
 
 header {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  height: 65px;
+
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: space-evenly;
@@ -25,9 +24,9 @@ header {
   display: unset;
 }
 
-.hidestickey {
+/* .hidestickey {
   display: none;
-}
+} */
 
 .header-r {
   display: flex;
@@ -84,11 +83,14 @@ header img {
   background-color: rgb(230, 159, 78);
   color: white;
 }
-
+.stickey .d-flex {
+  display: flex!important;
+  justify-content: space-between;
+}
 .d-flex {
   align-items: center;
   justify-content: space-evenly;
-  /* box-shadow: 0 10px 20px rgb(0 0 0 / 20%); */
+
 }
 
 .num {
@@ -113,6 +115,8 @@ header img {
 }
 
 header.stickey {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* height: 65px; */
   position: sticky;
   top: 0;
   left: 0;

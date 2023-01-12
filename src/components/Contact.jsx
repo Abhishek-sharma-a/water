@@ -78,14 +78,14 @@ const Contact = () => {
             <Row className="mb-3">
               <Form.Group as={Col} md="6" controlId="validationCustom03">
                 <Form.Label>Email</Form.Label>
-                <Form.Control type="text" placeholder="Enter your email" required />
+                <Form.Control type="email" placeholder="Enter your email" required />
                 <Form.Control.Feedback type="invalid">
                   Please provide a valid email.
                 </Form.Control.Feedback>
               </Form.Group>
               <Form.Group as={Col} md="3" controlId="validationCustom04">
                 <Form.Label>Phone</Form.Label>
-                <Form.Control type="number" placeholder=" " required />
+                <Form.Control type="phone" placeholder=" " required />
                 <Form.Control.Feedback type="invalid">
                   Please provide a valid number.
                 </Form.Control.Feedback>
