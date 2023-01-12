@@ -10,7 +10,7 @@ import png4 from '../assets/images/water-barrel.png'
 const Element = () => {
   return (
   <>
-  <Headings h="feature Layout" p="Home > Feature Layout" />
+  <Headings h="About us" p="Home > About us " />
   <div>
   <div className='cardf'> <Card i={png1} h="Chloride Free" />
                 <Card i={png2} h="Quality Certified" /> <Card i={png3} h="Maximum Purity" /> <Card i={png4} h="5 Step Filtration" /></div>

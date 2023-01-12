@@ -7,8 +7,6 @@ import Logo from "./Logo"
 import JSONDATA from './MOCK_DATA.json'
 import Modal from 'react-bootstrap/Modal';
 const Header = () => {
-
-
   const [show, setShow] = useState(false);
   const handleClose = () => { setShow(false); setSearch(false) }
   const handleShow = () => setShow(true);
@@ -36,9 +34,7 @@ const Header = () => {
     }
   };
   useEffect(() => {
-    console.log(window.scrollY, "r45t5t5")
     window.addEventListener("scroll", () => {
-
       setScroll(window.scrollY > 84)
 
     })
@@ -49,20 +45,22 @@ const Header = () => {
   return (
     <>
       <header className={scroll ? "stickey" : "hidestickey"}>
-        <Logo />
-        <Menu />
-
-
+        <div className={"d-flex"}>
+          <Logo />
+          {scroll ? null : <Ph no="123-456-7890" className="border-end" />}
+          <Menu />
+          {scroll ? null : <>
+            <div className=" x  rounded-circle" onClick={() => { click() }} >
+            <h3 className="bi bi-search p-3 mx-auto my-auto "></h3>
+            </div>
+            <div className=" x rounded-circle" >
+              <h3 className="bi bi-cart p-3 mx-auto my-auto"></h3>
+            </div>
+          </>}
+        </div>
       </header>
 
-      <div className={scroll === false ? "stickey d-flex mt-5" : "hidestickey d-flex mt-5"}>
-        <Logo />
-        <Ph no="123-456-7890" className="border-end" />
-        <Menu />
-        <div className=" x  rounded-circle" onClick={() => { click() }} ><h3 className="bi bi-search p-3 mx-auto my-auto "></h3></div>
 
-        <div className=" x rounded-circle" ><h3 className="bi bi-cart p-3 mx-auto my-auto"></h3></div>
-      </div>
       <div className='search'>
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
@@ -77,5 +75,5 @@ const Header = () => {
     </>
   )
 }
-// hj
+
 export default Header

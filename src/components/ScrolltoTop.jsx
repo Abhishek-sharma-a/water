@@ -7,7 +7,14 @@ export default function ScrollToTop() {
     const { pathname } = useLocation();
 
     useEffect(() => {
-        window.scrollTo(0, 0);
+        // window.scrollTo(0,1000);
+     
+            window.scrollTo({
+                top: 10,
+                behavior: 'smooth',
+            });
+    
+      
     }, [pathname]);
 
     return null;

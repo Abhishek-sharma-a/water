@@ -1,0 +1,83 @@
+.loginCard {
+margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+.loginCard h1 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    text-shadow: .1em .1em 10px hsl(200 50% 30%);
+}
+
+
+.login {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 20%);
+    ;
+}
+
+
+
+.buttonplace {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+
+}
+
+.buttonplace button a {
+    text-decoration: none;
+    color: black;
+}
+
+.login input {
+
+    padding: 5px 20px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    margin: 10px;
+}
+
+.login button {
+    background-color: rgb(230, 159, 78);
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    outline: none;
+    border: none;
+}
+
+.login button:hover {
+    background-color: #13bbea;
+    transition: 0.2s ease-in-out;
+}
+
+.registratoin {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.register {
+    padding-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.regbutton {
+    margin-top: 20px;
+}
